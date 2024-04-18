@@ -7,7 +7,7 @@
     "start": "webpack serve --open",
     "build": "webpack",
     "lint": "eslint --fix \"./src/**/*.js\"",
-    "format": "prettier --write '**/*.*css'"
+    "format": "prettier --write \"src/**/*.*css\" \"src/**/*.html\""
   },
   "keywords": [],
   "author": "",
