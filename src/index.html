@@ -4,33 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <menu>
-          <div class="container__dropdown flex">
-            <div class="dropdown">
-              <button class="dropdown__btn">Dropdown button 1</button>
-              <div class="dropdown__content">
-                <div class="flex column">
-                  <a href="#">Link A</a>
-                  <a href="#">Link B</a>
-                </div>
+          <div class="flex">
+            <div class="flex column dropdown">
+              <button class="dropdown__btn" id="dropdownBtn1">
+                Dropdown 1
+              </button>
+              <div class="flex column dropdown__content" id="dropdownContent1">
+                <a href="#">Link A</a>
+                <a href="#">Link B</a>
+                <a href="#">Link C</a>
+                <a href="#">Link D</a>
               </div>
             </div>
-            <div class="dropdown">
-              <button class="dropdown__btn">Dropdown button 2</button>
-              <div class="dropdown__content">
-                <div class="flex column">
-                  <a href="#">Long Link A</a>
-                  <a href="#">Another long Link B</a>
-                </div>
+            <div class="flex column dropdown">
+              <button class="dropdown__btn" id="dropdownBtn2">
+                Dropdown 2
+              </button>
+              <div class="flex column dropdown__content" id="dropdownContent2">
+                <a href="#">Another link 1</a>
+                <a href="#">Some link 2</a>
+                <a href="#">This link 3</a>
+                <a href="#">That link 4</a>
               </div>
+            </div>
+            <div class="flex center" id="mobileMenu">
+              <i class="bx bx-lg bx-menu"></i>
             </div>
           </div>
         </menu>
       </nav>
     </header>
+    <div class="flex column mobile__content">
+      <span class="header">First Header</span>
+      <a href="#">Link A</a>
+      <a href="#">Link B</a>
+      <a href="#">Link C</a>
+      <span class="header">Second Header</span>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
   </body>
 </html>

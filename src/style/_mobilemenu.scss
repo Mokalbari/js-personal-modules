@@ -1,0 +1,33 @@
+#mobile__btn {
+  background-color: white;
+  border: none;
+  border-radius: 2rem;
+}
+
+.mobile__content {
+  height: calc(100svh - 7svh);
+  width: 100svw;
+  padding: 2rem;
+  background-color: lightcoral;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed; /* Ensures the menu is positioned relative to the viewport */
+  left: 100svw;
+
+  span {
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.show-mobile-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-100svw);
+  transition:
+    transform 250ms ease-in-out,
+    opacity 250ms ease-in-out;
+}
